@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @request.estado %>
+</p>
+
+<p>
+  <strong>Agency:</strong>
+  <%= @request.agency %>
+</p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @request.tipo %>
+</p>
+
+<p>
+  <strong>App:</strong>
+  <%= @request.app %>
+</p>
+
+<p>
+  <strong>Os:</strong>
+  <%= @request.os %>
+</p>
+
+<p>
+  <strong>Geo:</strong>
+  <%= @request.geo %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @request.price %>
+</p>
+
+<p>
+  <strong>Agencylink:</strong>
+  <%= @request.agencyLink %>
+</p>
+
+<%= link_to 'Edit', edit_request_path(@request) %> |
+<%= link_to 'Back', requests_path %>

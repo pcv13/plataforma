@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @offer.estado %>
+</p>
+
+<p>
+  <strong>Agency:</strong>
+  <%= @offer.agency %>
+</p>
+
+<p>
+  <strong>tipo:</strong>
+  <%= @offer.tipo %>
+</p>
+
+<p>
+  <strong>App:</strong>
+  <%= @offer.app %>
+</p>
+
+<p>
+  <strong>Os:</strong>
+  <%= @offer.os %>
+</p>
+
+<p>
+  <strong>Geo:</strong>
+  <%= @offer.geo %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @offer.price %>
+</p>
+
+<p>
+  <strong>Agencylink:</strong>
+  <%= @offer.agencyLink %>
+</p>
+
+<%= link_to 'Edit', edit_offer_path(@offer) %> |
+<%= link_to 'Back', offers_path %>

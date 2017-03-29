@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  estado: MyString
+  agency: MyString
+  tipo: MyString
+  app: MyString
+  os: MyString
+  geo: MyString
+  price: 
+  agencyLink: MyString
+
+two:
+  estado: MyString
+  agency: MyString
+  tipo: MyString
+  app: MyString
+  os: MyString
+  geo: MyString
+  price: 
+  agencyLink: MyString
