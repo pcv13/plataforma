@@ -1,0 +1,299 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+/* line 13, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+.center {
+  text-align: center;
+}
+
+/* line 16, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+div {
+  background-color: #1F2739;
+  color: white;
+}
+
+/* line 21, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+body {
+  background-color: #1F2739;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.42em;
+}
+
+/* line 28, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+html {
+  background-color: #1f2739;
+}
+
+/* line 31, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+td {
+  color: white;
+}
+
+/* line 34, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+h1 {
+  font-size: 3em;
+  font-weight: 300;
+  line-height: 1em;
+  text-align: center;
+  color: #4DC3FA;
+}
+
+/* line 41, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+.select {
+  display: inline-flex;
+  user-select: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* line 48, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+li {
+  color: #1F2739;
+}
+
+/* line 53, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* line 58, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 64, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+a:hover {
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #1F2739;
+}
+
+/* line 69, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+a:active {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* line 73, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+h3 {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1em;
+  text-align: center;
+  color: #4DC3FA;
+}
+
+/* line 80, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+h2 {
+  font-size: 1em;
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  line-height: 1em;
+  padding-bottom: 2em;
+  color: #FB667A;
+}
+
+/* line 90, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+h2 a {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FB667A;
+  text-decoration: none;
+}
+
+/* line 97, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+.blue {
+  color: #185875;
+}
+
+/* line 98, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+.yellow {
+  color: #FFF842;
+}
+
+/* line 100, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+.container th h1 {
+  font-weight: bold;
+  font-size: 1em;
+  text-align: left;
+  color: #185875;
+}
+
+/* line 107, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+.container td {
+  font-weight: normal;
+  font-size: 1em;
+  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+  -moz-box-shadow: 0 2px 2px -2px #0E1119;
+  box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+/* line 115, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+.container {
+  text-align: left;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+  display: table;
+  padding: 0 0 8em 0;
+}
+
+/* line 124, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+.container td, .container th {
+  padding-bottom: 1%;
+  padding-top: 1%;
+  padding-left: 1%;
+}
+
+/* Background-color of the odd rows */
+/* line 131, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+.container tr:nth-child(odd) {
+  background-color: #323C50;
+}
+
+/* Background-color of the even rows */
+/* line 136, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+.container tr:nth-child(even) {
+  background-color: #2C3446;
+}
+
+/* line 140, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+.container th {
+  background-color: #1F2739;
+}
+
+/* line 144, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+.container td:first-child {
+  color: #FB667A;
+}
+
+/* line 146, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+.container tr:hover {
+  background-color: #464A52;
+}
+
+/* line 151, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/offers.scss */
+.container td:hover {
+  background-color: #FFF842;
+  color: #403E10;
+}
+
+/* for custom scrollbar for webkit browser*/
+/* line 1, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 10, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 17, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 23, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 26, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 30, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 36, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 40, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 47, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 52, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 56, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 62, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 70, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 81, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 87, /home/pablo/Escritorio/plataforma/Plataforma/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
