@@ -1,5 +1,20 @@
 <div class= "bg">
 <p id="notice"><%= notice %></p>
+<style>
+.btn-group .button {
+     /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+    margin-right: 3px;
+}
+</style>
 
 <div class="info">
   <div class="buttons">
@@ -31,18 +46,25 @@
   <tbody>
     <% @offers.each do |offer| %>
       <tr>
-        <td><%= offer.estado %></td>
-        <td><%= offer.agency %></td>
-        <td><%= offer.tipo %></td>
-        <td><%= offer.app %></td>
-        <td><%= offer.os %></td>
-        <td><%= offer.geo %></td>
-        <td><%= offer.price %></td>
+        <td class="<%= offer.estado %>"><%= offer.estado %></td>
+        <td class="<%= offer.estado %>"><%= offer.agency %></td>
+        <td class="<%= offer.estado %>"><%= offer.tipo %></td>
+        <td class="<%= offer.estado %>"><%= offer.app %></td>
+        <td class="<%= offer.estado %>"><%= offer.os %></td>
+        <td class="<%= offer.estado %>"><%= offer.geo %></td>
+        <td class="<%= offer.estado %>"><%= offer.price %></td>
+        <td class="<%= offer.estado %>"><div class="btn-group ">
+          <input class="button aprobado" type="submit" onclick = "location='/offers/<%= offer.id %>/monetizado'" value="$" />
+          <input class="button afiliado" type="submit" onclick = "location='/offers/<%= offer.id %>/afiliado'" value="@ " />
+          <input class="button rechazado" type="submit" onclick = "location='/offers/<%= offer.id %>/stop'" value="" />
+          <input class="button destroy" type="submit" onclick = "location='/offers/<%= offer.id %>/destruido'" value="D" />
 
-        <td><%= link_to 'Edit', edit_offer_path(offer) %></td>
+        </div></td>
+
+        <!-- <td><%= link_to 'Edit', edit_offer_path(offer) %></td>
         <td><%= link_to 'Afliado', afiliate_offer_path(offer) %></td>
         <td><%= link_to 'Monetizado', monetized_offer_path(offer) %></td>
-        <td><%= link_to 'Stop', stop_offer_path(offer) %></td>
+        <td><%= link_to 'Stop', stop_offer_path(offer) %></td> -->
       </tr>
     <% end %>
   </tbody>

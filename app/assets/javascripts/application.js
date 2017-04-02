@@ -14,3 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+document.addEventListener('DOMContentLoaded', function(){
+  console.log("Cartgo");
+})

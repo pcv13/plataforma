@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   get "/offers/:id/monetizado", to:"offers#monetizado",as: 'monetized_offer'
   get "/offers/:id/afiliado", to:"offers#afiliado",as: 'afiliate_offer'
   get "/offers/:id/stop", to:"offers#stop",as: 'stop_offer'
+  get "/offers/:id/destruido", to:"offers#destruido",as: 'destruido_offer'
+
 
 
 

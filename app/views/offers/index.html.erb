@@ -1,6 +1,23 @@
 <div class= "bg">
 <p id="notice"><%= notice %></p>
 
+<style>
+.btn-group .button {
+     /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+    margin-right: 3px;
+}
+</style>
+
+
 <nav class="select  ">
     <li><a href="#">update</a></li>
     <li><a href="/requests">Request</a></li>
@@ -13,7 +30,7 @@
     <tr>
       <th><h1>Estado</h1></th>
       <th><h1>Agency</h1></th>
-      <th><h1>Offer</h1></th>
+      <th><h1>KPI</h1></th>
 
       <th><h1>Price</h1></th>
       <th><h1>Geo</h1></th>
@@ -24,19 +41,33 @@
   <tbody>
     <% @offers.each do |offer| %>
       <tr>
-        <td><%= offer.estado %></td>
-        <td><%= offer.agency %></td>
-        <td><%= offer.oferta_des %></td>
-        <td><%= offer.price %></td>
-        <td><%= offer.geo %></td>
-        <td><%= offer.agencyLink %></td>
-        <td><%= link_to 'Edit', edit_offer_path(offer) %></td>
+        <td class="<%= offer.estado %>"><%= offer.estado %></td>
+        <td class="<%= offer.estado %>"><%= offer.agency %></td>
+        <td class="<%= offer.estado %>"> <%= offer.kpi %></td>
+        <td class="<%= offer.estado %>"> <%= offer.price %></td>
+        <td class="<%= offer.estado %>"> <%= offer.geo %></td>
+        <td class="<%= offer.estado %>"> <%= offer.agencyLink %></td>
+
+        <td class="<%= offer.estado %>"><div class="btn-group ">
+          <input class="button aprobado" type="submit" onclick = "location='/offers/<%= offer.id %>/aprobado'" value="✔" />
+          <input class="button rechazado" type="submit" onclick = "location='/offers/<%= offer.id %>/no_aprobado'" value="✘" />
+          <input class="button subido" type="submit" onclick = "location='/offers/<%= offer.id %>/subido'" value="↕" />
+          <input class="button destroy" type="submit" onclick = "location='/offers/<%= offer.id %>/destruido'" value="D" />
+
+        </div></td>
+        <!-- <td><div class="btn-group">
+          <button class="button">Button</button>
+          <button class="button">Button</button>
+          <button class="button">Button</button>
+          <button class="button">Button</button>
+        </div></td> -->
+        <!-- <td><%= link_to 'Edit', edit_offer_path(offer) %></td>
         <td><%= link_to 'Aprobado', approb_offer_path(offer) %></td>
         <td><%= link_to 'Rechazado', non_approb_offer_path(offer) %></td>
         <td><%= link_to 'Autorizado',authotized_offer_path(offer) %></td>
         <td><%= link_to 'No autorizado', non_authotized_offer_path(offer) %></td>
         <td><%= link_to 'Subido', upload_offer_path(offer) %></td>
-        <td><%= link_to 'Destroy', offer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', offer, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
       </tr>
     <% end %>
   </tbody>

@@ -64,6 +64,19 @@ class OffersController < ApplicationController
      redirect_to offers_url
   end
 
+  def destruido
+    @offer = Offer.find(params[:id])
+    @offer.destroy
+    respond_to do |format|
+      if @offer.estado=="aprobado"||@offer.estado=="rechazado"
+        format.html { redirect_to offers_url, notice: 'Offer was successfully destroyed.' }
+        format.json { head :no_content }
+      end
+      format.html { redirect_to list_offer_url, notice: 'Offer was successfully destroyed.' }
+      format.json { head :no_content }
+    end
+  end
+
   def no_aprobado
     @offer = Offer.find(params[:id])
     @offer.update(:estado =>"rechazado")
@@ -120,6 +133,6 @@ class OffersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def offer_params
-      params.require(:offer).permit(:estado, :agency, :tipo, :app, :os, :geo, :price, :agencyLink, :oferta_des)
+      params.require(:offer).permit(:estado, :agency, :tipo, :app, :os, :kpi, :geo, :price, :agencyLink, :oferta_des)
     end
 end
