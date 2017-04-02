@@ -1,16 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:100);
 
-h1 {
-  font-size: 30px;
-  font-family: 'Lato', sans-serif;
-  color: #fff;
-}
-
-h2 {
-  font-size: 16px;
-  font-family: 'Lato', sans-serif;
-  color: #fff;
-}
 
 
 
@@ -26,10 +14,20 @@ h2 {
 
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:100);
 
-.center{
-  text-align: center;
+h1 {
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
 }
+
+h2 {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+}
+
 div{
     background-color:#1F2739;
     color: white;
